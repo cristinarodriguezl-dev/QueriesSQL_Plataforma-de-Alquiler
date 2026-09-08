@@ -50,3 +50,14 @@ CREATE TABLE "ROLE_USER"
 ```
 
 ## 4. Creación de la tabla ROLE:
+
+```sql
+CREATE TABLE "ROLE"
+(
+    id_role serial NOT NULL,
+    name_role character varying(20) NOT NULL,
+    CONSTRAINT role_pkey PRIMARY KEY (id_role)
+);
+```
+
+## 5.
