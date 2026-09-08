@@ -8,7 +8,7 @@ Crear una base de datos para una plataforma de alquiler de habitaciones, que per
 ## 1. Creación de la base de datos:
 
 ```sql
- CREATE DATABASE "Queries SQL - plataforma de alquiler de habitaciones"
+ CREATE DATABASE "QueriesSQL-plataforma-de-alquiler-de-habitaciones"
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'
@@ -17,7 +17,7 @@ Crear una base de datos para una plataforma de alquiler de habitaciones, que per
     IS_TEMPLATE = False;
 ```
 
-## 2. Creación de las tablas de usuario:
+## 2. Creación de la tabla USER:
 
 ```sql
 CREATE TABLE "USER"
@@ -38,3 +38,15 @@ CREATE TABLE "USER"
 );
 
 ```
+## 3. Creación de la tabla de ROLE_USER:
+
+```sql
+CREATE TABLE "ROLE_USER"
+(
+    id_user_roleuser integer NOT NULL,
+    id_role_roleuser integer NOT NULL,
+    CONSTRAINT role_user_pkey PRIMARY KEY (id_user_roleuser,id_role_roleuser)
+);
+```
+
+## 4. Creación de la tabla ROLE:
