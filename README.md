@@ -8,7 +8,7 @@ Crear una base de datos para una plataforma de alquiler de habitaciones, que per
 ## 1. Creación de la base de datos:
 
 ```sql
- CREATE DATABASE"Queries SQL - plataforma de alquiler de habitaciones"
+ CREATE DATABASE "Queries SQL - plataforma de alquiler de habitaciones"
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'
