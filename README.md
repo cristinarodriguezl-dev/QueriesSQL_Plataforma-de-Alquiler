@@ -1,14 +1,14 @@
-# Queries-SQL - Plataforma de Alquiler
+# QueriesSQL - Plataforma de Alquiler
 
 ## Objetivo del proyecto:
 
-Crear una base de datos para una plataforma de alquiler de casas y apartamentos, que permita gestionar información sobre las propiedades, usuarios y alquileres, con la finalidad de aprender y profundizar en la creación de bases de datos y en la realización de consultas SQL.
+Crear una base de datos para una plataforma de alquiler de habitaciones, que permita gestionar información sobre las propiedades, usuarios y alquileres, con la finalidad de aprender y profundizar en la creación de bases de datos y en la realización de consultas SQL.
 
 
 ## Creación de la base de datos:
 
 ```sql
-CREATE DATABASE "Queries SQL - plataforma de alquiler de habitaciones"
+ CREATE DATABASE "Queries SQL - plataforma de alquiler de habitaciones"
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'
