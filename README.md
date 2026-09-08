@@ -5,10 +5,10 @@
 Crear una base de datos para una plataforma de alquiler de casas y apartamentos, que permita gestionar información sobre las propiedades, usuarios y alquileres, con la finalidad de aprender y profundizar en la creación de bases de datos y en la realización de consultas SQL.
 
 
-## Creación de la base de datos:
+## 1. Creación de la base de datos:
 
 ```sql
-CREATE DATABASE "Queries SQL - plataforma de alquiler de habitaciones"
+CREATE DATABASE"Queries SQL - plataforma de alquiler de habitaciones"
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'
@@ -17,4 +17,5 @@ CREATE DATABASE "Queries SQL - plataforma de alquiler de habitaciones"
     IS_TEMPLATE = False;
 ```
 
+## 2. Creación de las tablas de usuario:
 
