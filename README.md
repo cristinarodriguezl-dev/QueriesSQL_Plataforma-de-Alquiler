@@ -173,3 +173,78 @@ CREATE TABLE "ROOM"
     CONSTRAINT room_pkey PRIMARY KEY (id_room)
 );
 ```
+
+## 12. Creación de la tabla POST:
+
+```sql
+CREATE TABLE "POST"
+(
+    id_post serial NOT NULL,
+    id_publisher_post integer NOT NULL,
+    id_room_post integer NOT NULL,
+    datetime_post timestamp NOT NULL,
+    min_period_post integer,
+    monthly_price_post numeric(10,2) NOT NULL,
+    deposit_price_post numeric(10,2),
+    status_post character varying(20) NOT NULL,
+    CONSTRAINT post_pkey PRIMARY KEY (id_post)
+);
+```
+
+## 13. Creación de la tabla PAY_METHOD:
+
+```sql
+CREATE TABLE "PAY_METHOD"
+(
+    id_pay serial NOT NULL,
+    name_pay character varying(50) NOT NULL,
+    type_pay character varying(50) NOT NULL,
+    status_pay boolean NOT NULL,
+    CONSTRAINT pay_method_pkey PRIMARY KEY (id_pay)
+);
+```
+
+## 14. Creación de la tabla BOOKING:
+
+```sql
+CREATE TABLE "BOOKING"
+(
+    id_booking serial NOT NULL,
+    id_user_booking integer NOT NULL,
+    id_post_booking integer NOT NULL,
+    datetime_booking timestamp NOT NULL,
+    pay_method_booking integer NOT NULL,
+    start_date_booking date NOT NULL,
+    end_date_booking date NOT NULL,
+    pay_confirm_booking boolean,
+    status_booking character varying(20) NOT NULL,
+    CONSTRAINT booking_pkey PRIMARY KEY (id_booking)
+);
+```
+
+## 15. Creación de la tabla USER_REVIEW:
+
+```sql
+CREATE TABLE "USER_REVIEW"
+(
+    id_userreview serial NOT NULL,
+    id_booking_userreview integer NOT NULL,
+    rate_userreview integer NOT NULL,
+    desc_userreview character varying(500),
+    CONSTRAINT user_review_pkey PRIMARY KEY (id_userreview)
+);
+```
+
+## 16. Creación de la tabla ROOM_REVIEW:
+
+```sql
+CREATE TABLE "ROOM_REVIEW"
+(
+    id_roomreview serial NOT NULL,
+    id_booking_roomreview integer NOT NULL,
+    rate_room_roomreview integer NOT NULL,
+    rate_owner_roomreview integer NOT NULL,
+    desc_roomreview character varying(500),
+    CONSTRAINT room_review_pkey PRIMARY KEY (id_roomreview)
+);
+```
