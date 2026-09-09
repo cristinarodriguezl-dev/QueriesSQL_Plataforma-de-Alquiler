@@ -106,12 +106,12 @@ CREATE TABLE "TOWN"
 ## 8. Creación de la tabla NEIGHBORHOOD:
 
 ```sql
-CREATE TABLE "NEIRBORHOOD"
+CREATE TABLE "NEIGHBORHOOD"
 (
-    id_neirbor serial NOT NULL,
-    id_town_neibor integer NOT NULL,
-    name_neibor character varying(100) NOT NULL,
-    CONSTRAINT neirborhood_pkey PRIMARY KEY (id_neirbor)
+    id_neighbor serial NOT NULL,
+    id_town_neighbor integer NOT NULL,
+    name_neighbor character varying(100) NOT NULL,
+    CONSTRAINT neighborhood_pkey PRIMARY KEY (id_neighbor)
 );
 ```
 
