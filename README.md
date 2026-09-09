@@ -4,7 +4,6 @@
 
 Crear una base de datos para una plataforma de alquiler de habitaciones, que permita gestionar información sobre las propiedades, usuarios y alquileres, con la finalidad de aprender y profundizar en la creación de bases de datos y en la realización de consultas SQL.
 
-
 ## 1. Creación de la base de datos:
 
 ```sql
@@ -38,6 +37,7 @@ CREATE TABLE "USER"
 );
 
 ```
+
 ## 3. Creación de la tabla de ROLE_USER:
 
 ```sql
@@ -60,4 +60,45 @@ CREATE TABLE "ROLE"
 );
 ```
 
-## 5.
+## 5. Creación de la tabla COUNTRY:
+
+```sql
+CREATE TABLE "COUNTRY"
+(
+    id_contry serial NOT NULL,
+    name_country character varying(100) NOT NULL,
+    CONSTRAINT country_pkey PRIMARY KEY (id_contry)
+);
+```
+
+## 6. Creación de la tabla PREFERENCE:
+
+```sql
+CREATE TABLE "PREFERENCE"
+(
+    id_user_pref integer NOT NULL,
+    pet_owner_pref boolean,
+    smoke_pref boolean,
+    aircon_pref boolean,
+    wifi_pref boolean,
+    bath_pref boolean,
+    closet_pref boolean,
+    kitchen_pref boolean,
+    balcony_pref boolean,
+    visit_allow_pref boolean,
+    utilities_incl_pref boolean,
+    CONSTRAINT preference_pkey PRIMARY KEY (id_user_pref)
+);
+```
+
+## 7. Creación de la tabla TOWN:
+
+```sql
+CREATE TABLE "TOWN"
+(
+    id_town serial NOT NULL,
+    name_town character varying(100) NOT NULL,
+    province_town character varying(100) NOT NULL,
+    CONSTRAINT town_pkey PRIMARY KEY (id_town)
+);
+```
