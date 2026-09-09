@@ -154,7 +154,7 @@ CREATE TABLE "ROOM"
     postal_room character varying(20) NOT NULL,
     floor_room character varying(10),
     town_room integer NOT NULL,
-    neibor_room integer,
+    neighbor_room integer,
     size_room numeric(6,2),
     bed_qty_room integer,
     capacity_room integer,
