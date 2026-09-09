@@ -3,7 +3,19 @@
 ## Objetivo del proyecto:
 
 Crear una base de datos para una plataforma de alquiler de habitaciones, que permita gestionar información sobre las propiedades, usuarios y alquileres, con la finalidad de aprender y profundizar en la creación de bases de datos y en la realización de consultas SQL.
+ 
+## Creación de la base de datos en pgAdmin:
+ 
+1. Abrir pgAdmin e iniciar sesión.
+2. Click derecho en **Databases** → **Create** → **Database...**
+4. Poner el nombre deseado y guardar.
+5. Click derecho en la base de datos → **Query Tool**.
+6. Ejecutar en orden las sentencias `CREATE TABLE` de este README (puntos 2 al 16).
+---
+ <img width="387" height="280" alt="Captura de pantalla 2026-09-09 125308" src="https://github.com/user-attachments/assets/4ae5fa66-fcec-41a3-8e9b-9644cf2ae676" /> 
+ <img width="272" height="286" alt="Captura de pantalla 2026-09-09 125405" src="https://github.com/user-attachments/assets/fa416ac2-432d-41ba-933c-6066607ac356" />
 
+---
 ## 1. Creación de la base de datos:
 
 ```sql
